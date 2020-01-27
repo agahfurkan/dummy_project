@@ -6,6 +6,11 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import java.util.ArrayList;
+
+import ratel.library.storylibrary.StoryLibrary;
+import ratel.library.storylibrary.StoryProfile;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -18,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         MainPage fragment = new MainPage();
         getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
+        StoryLibrary s = new StoryLibrary(R.id.container, this, new ArrayList<StoryProfile>());
+        s.start(new StoryLibrary.StoryLibraryReadyListener() {
+            @Override
+            public void onReady() {
+                s.play();
+            }
+        });
     }
 
 }

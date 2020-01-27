@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WifiSignal.iml" filepath="$PROJECT_DIR$/WifiSignal.iml" group="WifiSignal" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="WifiSignal/app" />
+      <module fileurl="file://$PROJECT_DIR$/dummy_project.iml" filepath="$PROJECT_DIR$/dummy_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dummy_library/storyLibrary.iml" filepath="$PROJECT_DIR$/dummy_library/storyLibrary.iml" />
     </modules>
   </component>
 </project>

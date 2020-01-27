@@ -1,0 +1,3 @@
+[submodule "dummy_library"]
+	path = dummy_library
+	url = https://github.com/agahfurkan/dummy_library.git

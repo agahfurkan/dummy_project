@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':storyLibrary'
+project(':storyLibrary').projectDir = new File('dummy_library')
